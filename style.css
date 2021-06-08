@@ -1,0 +1,184 @@
+:root {
+
+--Bright-orange: hsl(31, 77%, 52%);
+
+--Dark-cyan: hsl(184, 100%, 22%);
+
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+--Transparent-white /*(paragraphs)*/: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray /*(background, headings, buttons)*/: hsl(0, 0%, 95%);
+}
+
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+
+  body {
+      background-color: var(--Very-light-gray);
+      font-size: 0.9375rem;
+  }
+  
+  img {
+      margin-bottom: 20px;
+  }
+
+  h1 {
+      color: var(--Very-light-gray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-family: 'Big Shoulders Display';
+      font-weight: 700;
+  }
+
+
+ p {
+   color: var(--Transparent-white);
+   line-height: 1.6;
+   font-weight: 400;
+   margin-bottom: 10px;
+   font-family: 'Lexend Deca', sans-serif;
+ }
+
+.sedans {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+  background: var(--Dark-cyan);
+}
+
+.luxury {
+  background: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+  
+}
+
+.container {
+  margin: 20px;
+  min-height: 90vh;
+  
+}
+
+.sedans, .suvs, .luxury {
+   padding: 40px;
+   min-height: 350px;
+   
+}
+
+
+button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  border-style: unset;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  
+  
+}
+
+button:hover {
+  border: 1px solid white;
+  
+}
+
+.sedans button {
+  color: var(--Bright-orange);
+  
+}
+
+.sedans button:hover {
+  background: var(--Bright-orange);
+  color: white;
+  
+}
+
+.suvs button {
+  color: var(--Dark-cyan);
+}
+
+.suvs button:hover {
+  background: var(--Dark-cyan);
+  color: white;
+  
+}
+
+.luxury button:hover {
+  background: var(--Very-dark-cyan);
+  color: white;
+  
+}
+.luxury button {
+  color: var(--Very-dark-cyan);
+  
+}
+
+@media only screen and (min-width: 950px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  button {
+    margin-top: 50px;
+  }
+
+  .sedans, .suvs, .luxury {
+    min-height: 450px;
+    max-width: 290px;
+  }
+
+  .sedans {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .luxury {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+
+
+
+
+
+
+
+  .attribution { 
+    font-size: 14px; text-align: center;
+    margin-top: auto;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+   }
+
+  .attribution a {
+     color: hsl(228, 45%, 44%); 
+     text-decoration: none;
+     color: var(--Very-dark-cyan);
+     position: relative;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: black;
+    }
+
+    a:hover {
+      color: rgb(75, 75, 243);
+    }
